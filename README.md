@@ -8,7 +8,7 @@ Introducing Hello Chat, A simpler way of keeping in touch with your friends and 
 3. You’re all set to chat! 
 
 # How to run the app locally 👨‍💻
-1. Clone repo: `https://github.com/bassam-abdullah/pinechat.git`
+1. Clone repo: `https://github.com/IshaanGaba97/Hello-Chat-App.git`
 2. `cd pine-chat`
 3. `cd server`
 4. Install dependencies with `yarn` or `npm i`
