@@ -17,6 +17,7 @@ const Chat = () =>{
     const [room, setRoom] = useState('');
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
+    const [users, setUsers] = useState('');
     const ENDPOINT = 'localhost:5001';
     
     useEffect(() => {
@@ -43,6 +44,9 @@ const Chat = () =>{
         socket.on('message', (message) => {
             setMessages([...messages, message])
         })
+        socket.on("roomData", ({ users }) => {
+            setUsers(users);
+          });
     },[messages]);
 
     const sendMessage = (event) => {
@@ -66,7 +70,7 @@ const Chat = () =>{
                 sendMessage={sendMessage}
             />
             </div>
-            
+            <TextContainer users={users}/>
         </div>
     )
 }
