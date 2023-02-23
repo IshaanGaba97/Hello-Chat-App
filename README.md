@@ -14,3 +14,9 @@ Introducing Hello Chat, A simpler way of keeping in touch with your friends and 
 5. Run backend server with `npm start`
 6. `cd ..` To get out of the server folder then `cd client`
 7. Once you’re in client `npm i` and `npm start'.
+
+# Demo Images
+
+![](https://github.com/IshaanGaba97/Hello-Chat-App/blob/master/img/Screenshot%20(822).png)
+
+![](https://github.com/IshaanGaba97/Hello-Chat-App/blob/master/img/Screenshot%20(823).png)
