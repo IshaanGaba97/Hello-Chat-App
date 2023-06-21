@@ -18,7 +18,7 @@ const Chat = () =>{
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
     const [users, setUsers] = useState('');
-    const ENDPOINT = 'localhost:5001';
+    const ENDPOINT = 'https://helloappbackend.onrender.com';
     
     useEffect(() => {
         const {name, room} = queryString.parse(window.location.search)
@@ -38,7 +38,7 @@ const Chat = () =>{
             socket.off();
         }
 
-    }, [ENDPOINT,window.location.search ]);
+    }, [ENDPOINT,window.location.search]);
 
     useEffect(() => {
         socket.on('message', (message) => {
